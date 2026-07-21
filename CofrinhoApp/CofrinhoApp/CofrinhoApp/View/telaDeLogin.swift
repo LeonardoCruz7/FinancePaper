@@ -22,6 +22,7 @@ struct telaDeLogin: View {
     @State var senhaUsuario : String
     @State var ispressed : Bool = false
     
+    
     @State private var moedas: [MoedaFundo] = []
     
     var body: some View {
@@ -29,8 +30,7 @@ struct telaDeLogin: View {
         ZStack {
             Color(.systemBackground)
                 .ignoresSafeArea()
-            
-            
+    
             GeometryReader { geometry in
                 ZStack {
                     ForEach(moedas) { moeda in
